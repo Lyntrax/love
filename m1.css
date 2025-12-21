@@ -283,7 +283,7 @@ video {
 
   .container {
     width: 100%;
-    max-width: 480px;
+    max-width: 520px;
     padding: 10px;
     margin: 0 auto;
   }
@@ -295,3 +295,4 @@ video {
     margin-top: 15px;
   }
 }
+
