@@ -272,9 +272,8 @@ button:hover {
 }
 
 #voice .kiss img {
-  max-width: 100%;       /* won't overflow container */
-  height: auto;          /* keeps aspect ratio */
-  max-height: 300px;     /* optional: limits height for large screens */
+  width: 4rem;      /* won't overflow container */
+  height: 5rem;          /* keeps aspect ratio */     /* optional: limits height for large screens */
   display: block;
   margin: 20px auto 0;   /* centers horizontally */
 }
@@ -290,3 +289,4 @@ button:hover {
     padding: 15px;        /* smaller padding so it fits nicely */
   }
 }
+
