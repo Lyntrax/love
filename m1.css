@@ -1,3 +1,4 @@
+/* ====== GLOBAL STYLES ====== */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .container {
@@ -27,16 +29,16 @@ body {
   display: none;
 }
 
+/* ====== HEADINGS & TEXT ====== */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: black;
 }
 
-.greeting{
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.greeting {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 p {
@@ -46,14 +48,18 @@ p {
   color: black;
 }
 
+.letters {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* ====== BUTTONS ====== */
 .buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
-}
-
-.gif2{
-  height: 15rem;
 }
 
 button {
@@ -86,6 +92,7 @@ button:hover {
   color: #ffffffd5;
 }
 
+/* ====== ICON GRID ====== */
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -106,6 +113,7 @@ button:hover {
   display: block;
 }
 
+/* ====== GALLERY & MEDIA ====== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -113,10 +121,10 @@ button:hover {
   margin-top: 20px;
 }
 
-.gallery img {
-  width: 100%;
+.gallery img, .gif, .gif2, .flower img, video {
+  max-width: 100%;
+  height: auto;
   border-radius: 15px;
-  height: auto; 
 }
 
 .video-wrapper {
@@ -127,11 +135,12 @@ button:hover {
 }
 
 .video-wrapper video {
-  width: 100%; 
-  max-width: 100%; 
+  width: 100%;
+  max-width: 100%;
   border-radius: 15px;
 }
 
+/* ====== FLOWER & KISS ====== */
 .flower {
   font-size: 6rem;
   animation: float 2s infinite ease-in-out;
@@ -143,6 +152,7 @@ button:hover {
   animation: pop 0.5s ease;
 }
 
+/* ====== LETTER ====== */
 .letter {
   background: rgba(255,255,255,0.1);
   padding: 25px;
@@ -151,13 +161,7 @@ button:hover {
   text-align: left;
 }
 
-.letters{
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  padding: 2rem;
-  line-height: 1.6;
-}
-
+/* ====== ANIMATIONS ====== */
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -171,4 +175,80 @@ button:hover {
 @keyframes pop {
   from { transform: scale(0); }
   to { transform: scale(1); }
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .greeting {
+    font-size: 1.3rem;
+  }
+
+  .letters {
+    font-size: 1.2rem;
+  }
+
+  .flower {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icon-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .greeting, .letters {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .flower {
+    font-size: 4rem;
+  }
+
+  .letter {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .greeting, .letters {
+    font-size: 0.9rem;
+  }
+
+  .flower {
+    font-size: 3rem;
+  }
+
+  button {
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+
+  .icon-grid {
+    grid-template-columns: 1fr;
+  }
 }
