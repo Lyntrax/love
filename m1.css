@@ -280,14 +280,21 @@ button:hover {
 
 @media (max-width: 480px) {
   .container {
-    width: 95%;           /* keep some margin */
-    min-width: 500px;     /* ensures it doesn’t get too thin */
-    padding: 15px;        /* small padding for breathing space */
+    width: 90%;          /* relative width */
+    max-width: 480px;    /* won't grow bigger than screen */
+    padding: 20px;       /* enough breathing space */
+    margin: 0 auto;      /* center horizontally */
   }
-  
+
   .letter {
-    padding: 15px;        /* smaller padding so it fits nicely */
+    padding: 20px;
+  }
+
+  .letters {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
+
 
 
