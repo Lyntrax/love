@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You ❤️</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="m1.css" />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+
+  <section id="landing" class="container">
+    <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGthODNza2E4OW9kMmc4amM2cWdsZGU3MDRtaGU3cTNycGwwdDVkZyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/TOSI9IqgQzzrDecyCD/200w.webp" loading="lazy" alt="Dancing Cat">
+    <h1>Helloww BABYYY KOO!! </h1>
+    <p class="greeting">Happy first Month Anniversary babyy and Merry Christmas!</p>
+
+    <div class="buttons">
+      <button class="primary" onclick="yesPlease()">YES? 💖</button>
+      <button class="secondary" onclick="noThanks()">NO? 🙈</button>
+    </div>
+  </section>
+
+  <section id="tryAgain" class="container hidden">
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm1wdTY0OXNwbmpva2I3bHNtOGUzajVnbHI3NGRhdDlsYnpxN3pnciZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Xr9TlAqw3S7VPOrftK/200.webp" alt="">
+    <h1>Pick mo po yes pleaseee </h1>
+    <button class="primary" onclick="goBack()">Try Again</button>
+  </section>
+
+  <section id="menu" class="container hidden">
+    <img class="gif2" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGthODNza2E4OW9kMmc4amM2cWdsZGU3MDRtaGU3cTNycGwwdDVkZyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/rrasLFSTyi4Th1e8Xo/200w.webp" alt="cat">
+    <h1>YEHEYYYY</h1>
+    <div class="icon-grid">
+      <button onclick="openSection('gallery')">
+        <i class="fa-solid fa-image"></i>
+        <span>Photos</span>
+      </button>
+
+      <button onclick="openSection('flower')">
+        <i class="fa-solid fa-seedling"></i>
+        <span>Flower</span>
+      </button>
+
+      <button onclick="openSection('voice')">
+        <i class="fa-solid fa-microphone"></i>
+        <span>Voice</span>
+      </button>
+
+      <button onclick="openSection('letter')">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Letter</span>
+      </button>
+    </div>
+
+    <button class="back" onclick="goHome()">Return</button>
+  </section>
+
+  <section id="gallery" class="container hidden">
+    <h1>📸</h1>
+
+    <div class="gallery">
+      <img src="e08bf796-348a-45fd-a36b-7b5b481844f3.jpg" alt="">
+      <img src="ec74fdbd-68c8-4cdf-bc30-816ef8524436.jpg" alt="">
+      <img src="32dd67af-12da-4288-9027-15e4b9bb1178.jpg" alt="">
+      <div class="video-wrapper">
+        <video controls>
+          <source src="780d989b-39e9-43c1-b5be-fe9c0f4267dd.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <button class="back" onclick="goMenu()">Return</button>
+  </section>
+
+  <section id="flower" class="container hidden">
+    <h1>Virtual flower lang muna baby, broke ako ngayon eh</h1>
+    <div class="flower"><img src="https://media3.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3eHo3M3U4dGowYXp0NWltNHFlN3JhOWl3Zm9lY3RycHkwN3QzMmdzciZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Ozj8t4BGAdCmFUDUuG/giphy.webp" alt=""></div>
+    <button class="back" onclick="goMenu()">Return</button>
+  </section>
+
+  <section id="voice" class="container hidden">
+    <h1> 💋</h1>
+
+    <audio id="voiceAudio" src="Recording (8).m4a"></audio>
+    <button class="primary" onclick="playVoice()">Play Voice</button>
+
+    <div id="kiss" class="kiss hidden"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm94NzcyOWsxN243bWtpOXdpeHl3cnhhMXJ3OTQ4c2N5NDlwb3A1cCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/euW6JDwrMn0BqyNC8t/giphy.webp" alt=""></div>
+
+    <button class="back" onclick="goMenu()">Return</button>
+  </section>
+
+  <section id="letter" class="container hidden">
+    <h1>💌</h1>
+
+    <div class="letter">
+      <p class="letters">
+        Hello my babyy,<br><br>
+        Happy first monthsary and Merry Christmas baby ko!! Hindi ko talaga inexpect na after 1 year, 3 months, and 13 days magkikita na tayo. Sobrang unexpected 
+        ng first meeting natin baby. Hindi ko inakala na mangyayari yon—na mahahawakan na kita, na hindi ka na lang sa screen, kung hindi yung totong ikaw na :))
+        alam mo po ba since nangyari yun, everythings feels more real na. Mas warm na yung feelings, mas totoo, at nag grow yung love natin ng sobra, URGH ilang
+        araw tayong naghintay para sa moment na yon, kaya hanggang ngayon fresh pa rin lahat sa isippp koo. Super happyy ako na boyfriend mo ako baby. Thank you
+        sa pag stay, sa pagiging patient, at sa pag love mo—even akala mo AI ako at poser pa hahaha. Sana piliin pa rin natin ang isat isa every day, kahit
+        may mga days na parang hindi natin alam kung anong gagawin :))). Kahit hindi tayo magksama mag celebrate ng Christmas ngayon. Masaya parin ako kasi
+        nagkita na tayo. Again happy first monthsary and Merry Christmas baby ko🎄
+        <br><br>
+        I LOVE YOU ALWAYS 💖
+      </p>
+    </div>
+
+    <button class="back" onclick="goMenu()">Return</button>
+  </section>
+
+  <script src="m1.js"></script>
+</body>
+</html>
