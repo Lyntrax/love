@@ -154,7 +154,7 @@ button:hover {
   overflow-wrap: break-word;  
   word-break: break-word;
   min-width: 400px;
-  max-width: 500px;
+  max-width: 90%;
 }
 
 @keyframes fade {
@@ -288,6 +288,7 @@ button:hover {
     line-height: 1.5;
   }
 }
+
 
 
 
