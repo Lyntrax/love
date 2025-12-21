@@ -281,7 +281,7 @@ button:hover {
 @media (max-width: 480px) {
   .container {
     width: 95%;           /* keep some margin */
-    min-width: 300px;     /* ensures it doesn’t get too thin */
+    min-width: 500px;     /* ensures it doesn’t get too thin */
     padding: 15px;        /* small padding for breathing space */
   }
   
@@ -289,4 +289,5 @@ button:hover {
     padding: 15px;        /* smaller padding so it fits nicely */
   }
 }
+
 
