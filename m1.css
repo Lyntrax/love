@@ -23,6 +23,7 @@ body {
   width: 90%;
   max-width: 800px;
   animation: fade 0.5s ease;
+  margin: 0 auto;
 }
 
 .hidden {
@@ -52,6 +53,8 @@ p {
   font-size: 1.3rem;
   letter-spacing: 1px;
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ====== BUTTONS ====== */
@@ -115,7 +118,7 @@ button:hover {
 /* ====== GALLERY & MEDIA ====== */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 20px;
 }
@@ -127,7 +130,7 @@ button:hover {
 }
 
 .video-wrapper {
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1;
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -140,6 +143,16 @@ button:hover {
 }
 
 /* ====== FLOWER & KISS ====== */
+#flower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;
+  min-height: 60vh;        /* makes it taller to center better */
+  padding: 20px;
+}
+
 .flower {
   font-size: 6rem;
   animation: float 2s infinite ease-in-out;
@@ -151,6 +164,14 @@ button:hover {
   animation: pop 0.5s ease;
 }
 
+#voice .kiss img {
+  max-width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: block;
+  margin: 20px auto 0;
+}
+
 /* ====== LETTER ====== */
 .letter {
   background: rgba(255,255,255,0.1);
@@ -158,7 +179,7 @@ button:hover {
   border-radius: 20px;
   margin-top: 20px;
   text-align: left;
-  overflow-wrap: break-word;  /* ensures long words break */
+  overflow-wrap: break-word;
   word-break: break-word;
 }
 
@@ -179,6 +200,8 @@ button:hover {
 }
 
 /* ====== RESPONSIVE STYLES ====== */
+
+/* Large tablets / small desktops */
 @media (max-width: 1024px) {
   h1 {
     font-size: 2.2rem;
@@ -197,10 +220,12 @@ button:hover {
   }
 }
 
+/* Tablets / landscape phones */
 @media (max-width: 768px) {
   .container {
     width: 95%;
-    padding: 10px;
+    padding: 15px;
+    margin: 0 auto;
   }
 
   .buttons {
@@ -219,7 +244,7 @@ button:hover {
 
   .greeting, .letters {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .flower {
@@ -227,21 +252,38 @@ button:hover {
   }
 
   .letter {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
+/* Phones / portrait */
 @media (max-width: 480px) {
+  .container {
+    width: 90%;          /* relative width */
+    max-width: 480px;    /* fits screen nicely */
+    padding: 20px;       /* enough breathing space */
+    margin: 0 auto;      /* center */
+  }
+
   h1 {
     font-size: 1.5rem;
   }
 
   .greeting, .letters {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .flower {
     font-size: 3rem;
+  }
+
+  .letter {
+    padding: 15px;
+  }
+
+  .buttons {
+    gap: 12px;
   }
 
   button {
@@ -252,49 +294,8 @@ button:hover {
   .icon-grid {
     grid-template-columns: 1fr;
   }
-}
-@media (max-width: 768px) {
-  .letter {
-    padding: 15px;
-  }
 
-  .letters {
-    font-size: 1rem;
-    line-height: 1.5;
+  #voice .kiss img {
+    max-height: 180px;
   }
 }
-
-@media (max-width: 480px) {
-  .letters {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-}
-
-#voice .kiss img {
-  width: 4rem;      /* won't overflow container */
-  height: 5rem;          /* keeps aspect ratio */     /* optional: limits height for large screens */
-  display: block;
-  margin: 20px auto 0;   /* centers horizontally */
-}
-
-@media (max-width: 480px) {
-  .container {
-    width: 90%;          /* relative width */
-    max-width: 480px;    /* won't grow bigger than screen */
-    padding: 20px;       /* enough breathing space */
-    margin: 0 auto;      /* center horizontally */
-  }
-
-  .letter {
-    padding: 20px;
-  }
-
-  .letters {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-
-
-
