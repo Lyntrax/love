@@ -51,7 +51,6 @@ p {
 .letters {
   font-size: 1.3rem;
   letter-spacing: 1px;
-  padding: 2rem;
   line-height: 1.6;
 }
 
@@ -159,7 +158,8 @@ button:hover {
   border-radius: 20px;
   margin-top: 20px;
   text-align: left;
-  min-width: 50%;
+  overflow-wrap: break-word;  /* ensures long words break */
+  word-break: break-word;
 }
 
 /* ====== ANIMATIONS ====== */
@@ -252,5 +252,30 @@ button:hover {
   .icon-grid {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 768px) {
+  .letter {
+    padding: 15px;
+  }
+
+  .letters {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .letters {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+#voice .kiss img {
+  max-width: 100%;       /* won't overflow container */
+  height: auto;          /* keeps aspect ratio */
+  max-height: 300px;     /* optional: limits height for large screens */
+  display: block;
+  margin: 20px auto 0;   /* centers horizontally */
 }
 
