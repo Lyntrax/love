@@ -159,6 +159,7 @@ button:hover {
   border-radius: 20px;
   margin-top: 20px;
   text-align: left;
+  min-width: 50%;
 }
 
 /* ====== ANIMATIONS ====== */
@@ -252,3 +253,4 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+
