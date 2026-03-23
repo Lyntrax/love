@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+</head>
+<body>
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="name-large" id="nameLarge">Hello, my name is John Carlo Caspe.</div>
+  </div>
+
+  <div class="website" id="website">
+    <nav class="navigation">
+      <div class="brand" id="brandLogo">JC</div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="dark-mode-btn" id="darkModeBtn"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <main class="main-content">
+      <section id="home" class="section">
+        <div class="container">
+          <div class="hero-layout">
+            <div class="hero-text">
+              <h1>Hey, I'm <span class="highlight">John Carlo Caspe</span></h1>
+              <div class="typing-text" id="typingText"></div>
+              <div class="button-group">
+                <button class="btn btn-primary" id="viewProjectsBtn">View My Work</button>
+                <button class="btn btn-secondary" id="contactBtnHero">Get In Touch</button>
+              </div>
+            </div>
+            <div class="hero-image">
+              <img src="img/FORMAL.jpg" alt="John Carlo Caspe">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-image">
+              <img src="img/FORMAL.jpg" alt="About me">
+            </div>
+            <div class="about-content">
+              <h2 class="section-title">About Me</h2>
+              <p>I’m 19 years old from Betes Aliaga, Nueva Ecija. I’ve been learning coding for about two years now since I entered the College of Information and Technology. I didn’t really have much to do back then, so I decided to try coding, and I quickly realized how fun and rewarding it is. Especially in this era, having coding skills is really important. I enjoy using what I’ve learned to create websites and bring my ideas to life. Most of the time, I code for fun and to pass time, experimenting with different projects and learning new things along the way.</p>
+              <p>Outside of coding, I love playing basketball and competing in Valorant. These activities help me stay active, focused, and sharp. I enjoy challenges both in games and in coding, and I’m always excited to learn, improve, and try new ideas.</p>
+              <div class="stat"><span>2</span> Years Experience</div>
+              <div class="stat"><span>2</span> Projects Done</div>
+              <div class="stat"><span>1</span> Happy Clients</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title text-center">Project</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <a href="https://lyntrax.github.io/love/m1.html" class="project-card" target="_blank">
+                <i class="fas fa-heart"></i>
+                <h3>Love Letter</h3>
+                <p>This project was developed to commemorate our first monthsary and Christmas celebration together, notwithstanding the distance that separates us</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title text-center">Tech Stack & Tools</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+              <p>ES6+, async/await, GSAP animations</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-react"></i>
+              <h3>React & Next.js</h3>
+              <p>Component-driven development, hooks</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i>
+              <h3>Advanced CSS</h3>
+              <p>Grid, Flexbox, responsive design</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-java"></i>
+              <h3>Java</h3>
+              <p>Spring Boot, OOP, backend development</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-python"></i>
+              <h3>Python</h3>
+              <p>Django, automation, data processing</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-code"></i>
+              <h3>GSAP / Three.js</h3>
+              <p>Scroll animations, 3D graphics</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title text-center">Let's Connect</h2>
+          <div class="contact-layout">
+            <div class="contact-info">
+              <div class="contact-item"><i class="fas fa-envelope"></i><span>johncarlocaspe4@gmail.com</span></div>
+              <div class="contact-item"><i class="fab fa-github"></i><span>github.com/Lyntrax</span></div>
+              <div class="contact-item"><i class="fas fa-phone"></i><span>+63 992 040 8996</span></div>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Your name" id="userName">
+              <input type="email" placeholder="Your email" id="userEmail">
+              <textarea rows="4" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 John Carlo Caspe — Poging Coder</p>
+    </footer>
+
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
