@@ -589,9 +589,6 @@ body.theme-dark .contact-form textarea:focus {
     gap: 2rem;
     text-align: center;
   }
-   .about-image {
-    display: none;
-  }
   .section-title {
     font-size: 2rem;
   }
