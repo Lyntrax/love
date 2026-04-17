@@ -595,6 +595,9 @@ body.theme-dark .contact-form textarea:focus {
   .about-content p {
     font-size: 0.95rem;
   }
+   .about-image img {
+    display: none;
+  }
   .stat {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
