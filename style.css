@@ -589,8 +589,8 @@ body.theme-dark .contact-form textarea:focus {
     gap: 2rem;
     text-align: center;
   }
-  .about-image img {
-    max-width: 240px;
+   .about-image {
+    display: none;
   }
   .section-title {
     font-size: 2rem;
@@ -655,26 +655,3 @@ body.theme-dark .contact-form textarea:focus {
   }
 }
 
-@media (max-width: 480px) {
-  ul.nav-links {
-    gap: 0.6rem;
-    padding-right: 2.5rem;
-  }
-  .nav-link {
-    font-size: 0.8rem;
-  }
-  .dark-mode-btn {
-    width: 34px;
-    height: 34px;
-    right: 0.7rem;
-  }
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-  .typing-text {
-    font-size: 1rem;
-  }
-  .section {
-    padding: 40px 1rem;
-  }
-}
