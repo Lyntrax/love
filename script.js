@@ -39,7 +39,7 @@
       gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
       const typingEl = document.getElementById('typingText');
-      const roles = ["Frontend Developer", "GSAP Animator", "UI/UX Enthusiast", "AI Explorer"];
+      const roles = ["Full Stack Developer", "GSAP Animator", "UI/UX Enthusiast", "AI Practitioner"];
       let roleIndex = 0;
       function typeNext() {
         if (!typingEl) return;
