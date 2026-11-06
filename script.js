@@ -17,7 +17,7 @@
 /* ---------- 1. Settings ------------------------------------------------- */
 
 const PIN = "0407";         // Main app lock screen PIN
-const MEMORY_PIN = "1234";  // Separate 4-digit PIN for "Our Memories"
+const MEMORY_PIN = "7789";  // Separate 4-digit PIN for "Our Memories"
 
 const SUPABASE = {
   url: "https://mptygbzfgxxwmasxprkj.supabase.co",
