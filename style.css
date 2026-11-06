@@ -719,6 +719,8 @@ main {
 
 /* ---------- Soundtrack (Universal Perfect Centering) ---------- */
 
+/* ---------- Soundtrack (Universal Perfect Centering) ---------- */
+
 .stage {
   position: relative;
   height: min(360px, 55dvh);
@@ -737,7 +739,7 @@ main {
   z-index: 2;
   text-align: center;
   padding: 20px 24px;
-  background: rgba(255, 250, 251, 0.82);
+  background: transparent; /* <-- Changed from semi-transparent white to fully transparent! */
   border-radius: 24px;
   display: flex;
   flex-direction: column;
