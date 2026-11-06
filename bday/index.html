@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>My baby</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PIN lock screen -->
+  <div class="scr" id="lock">
+    <div class="lock" id="lb">
+      <h2>I LOVE YOU!!</h2>
+      <p>ENTER OUR PIN</p>
+      <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+      <div class="pad" id="pad"></div>
+    </div>
+  </div>
+
+  <!-- Loading screen with 0–100% bar -->
+  <div class="scr hide" id="load">
+    <div class="ld">
+      <h2>bruttbruttt loading...</h2>
+      <div class="pc" id="pc">0%</div>
+      <div class="bar"><i id="bf"></i></div>
+      <p id="lm">gathering our memories…</p>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <main>
+    <div class="hero">
+      <h1>Happy Birthday,<br>Baby!</h1>
+    </div>
+    <div class="list" id="list"></div>
+  </main>
+
+  <!-- Popup sheet that holds each card's content -->
+  <div class="sheet" id="sheet">
+    <div class="pnl">
+      <div class="top">
+        <h2 id="st"></h2>
+        <button id="x" aria-label="Close">×</button>
+      </div>
+      <div id="body"></div>
+    </div>
+  </div>
+
+  <!-- Full-screen photo viewer -->
+  <div class="lightbox" id="lightbox">
+    <button id="lbc" aria-label="Close photo">×</button>
+    <img id="lbi" alt="">
+    <p id="lbt"></p>
+  </div>
+
+  <!-- "Delete this photo?" dialog -->
+  <div class="confirm" id="confirm">
+    <div class="box">
+      <h3>Delete this photo?</h3>
+      <p>This can’t be undone.</p>
+      <div class="row">
+        <button id="cno">Keep it</button>
+        <button class="fill" id="cyes">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
